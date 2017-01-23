@@ -1,2 +1,4 @@
 # boluome_web_doc
-前段规范
+#菠萝觅前段规范
+
+##[otoSaas Web App 前端规范](./otoSaas Web App 前端规范.md)
