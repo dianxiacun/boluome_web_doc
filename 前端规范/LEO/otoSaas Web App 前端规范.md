@@ -3,7 +3,8 @@
 ##jQuery
 
 ###html:
-  1. 头部meta标签：<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1,maximum-scale=1,user-scalable=no”>  设备1:1禁止用户缩放屏幕。
+  1. 头部meta标签(设备1:1禁止用户缩放屏幕)：
+  `<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1,maximum-scale=1,user-scalable=no”>`
   2. head中引入css文件，common于业务css前引入。
   3. js在body最后处引入，jquery -> 插件 -> common -> 业务js 。
   4. html代码结构合理，每个模块前注释模块的的作用。
@@ -13,13 +14,17 @@
 
 ###css:
   1. font-size 在 common 中统一设在html上，目前规定为16px，页面中所有字体单位为rem。
-  2. 目前主体颜色为rgb(255,154,0)或rgb(255,170,0)。
+  2. 目前主体颜色为
+  `rgb(255,154,0)`
+  或
+  `rgb(255,170,0)`
   3. border-bottom 统一设置：1px solid #f5f5f6。
   4. 页面主体，内边距左右均为16px。
   5. 头部图标16*16
   6. 头部导航栏，height：44px + border-bottom：1px，合高45px，position：fixed；
-  7. 主体部分，position：absolute，height根据头部总高度而定，calc（100% - 45px*X个头部栏）。例如右图顶部两个导航栏所以主体高度为height:calc(100% - 90px)；
-  8. 主体部分，滚动条固定在主体内，不蔓延至其余，凡是滑动部分，为了滑动流畅统一添加属性：  -webkit-overflow-scrolling: touch;（但该属性目前发现不少坑，正想办法解决ing）；
+  7. 主体部分，position：absolute，height根据头部总高度而定，calc（100% - 45px*X个头部栏）。例如右图顶部两个导航栏所以主体高度为`height:calc(100% - 90px)`；
+  8. 主体部分，滚动条固定在主体内，不蔓延至其余，凡是滑动部分，为了滑动流畅统一添加属性（但该属性目前发现不少坑，正想办法解决ing）：  
+  `-webkit-overflow-scrolling: touch;`
   9. 主体部分，每条li之间暂定32px；
   10. 主体部分内，左侧图片距离右侧信息间隔5%；
   11. 主体部分左侧图片，宽高定死92*125，如果ui设计不同，根据实际情况变更；
@@ -31,19 +36,19 @@
   17. 通用样式可以设置成class名。
   18. 其余样式根据实际情况而定。
 
-![](./img/票务1.jpeg)
-![](./img/票务2.jpeg)
-![](./img/票务3.jpeg)
-
+<img src='./img/票务1.jpeg' width='400' height='800'>
+<img src='./img/票务2.jpeg' width='400' height='800'>
+<img src='./img/票务3.jpeg' width='400' height='800'>
 
 ###js:
   1. 统一调用公共js，目前公共js中的方法正在不断完善中，现有：ajax请求统一本地与线上公共路径、更具URL调取其中的参数，中文也可正常解析、根据时间戳转化为本地时间、2种公共弹窗（凡是逻辑中的弹窗统一调取公共的）、获取当前年月日星期、根据传入的日期获得星期、获取当前农历日期、调取对象的所有key或value（兼容）。具体情况详见common.js
   为不污染全局环境，建议每个页面js封装为每个单独的js对象、或者写成闭包函数，方（kan）便（zhe）调（shu）用（fu）；
   2. js代码逻辑清晰、规范命名、关键是注释！关键是注释！关键是注释！
-  3. js中，出现浮层禁止其他内容滚动可以使用touch事件：$(‘触摸的对象’).on( ‘touch’ , funciton () { return false ) ;
+  3. js中，出现浮层禁止其他内容滚动可以使用touch事件：
+  `$(‘触摸的对象’).on( ‘touch’ , funciton () { return false ) ;`
   4. js中调用动画效果，建议过渡时间定为200ms；
 
-![](./img/code1.jpeg)
+<img src='./img/code1.jpeg' width='400' height='800'>
 
 ###Git:
   1. git工具：souceTree、github Desktop、bash
@@ -69,4 +74,4 @@
   3. 业务逻辑，下单
   4. 下单跳转收银台。
 
-![](./img/流程图.jpeg)
+<img src='./img/流程图.jpeg' width='800' height='400'>
