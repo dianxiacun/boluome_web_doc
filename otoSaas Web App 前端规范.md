@@ -31,9 +31,9 @@
   17. 通用样式可以设置成class名。
   18. 其余样式根据实际情况而定。
 
-![](./img/票务1.jpeg)
+<!-- ![](./img/票务1.jpeg)
 ![](./img/票务2.jpeg)
-![](./img/票务3.jpeg)
+![](./img/票务3.jpeg) -->
 
 
 ###js:
@@ -43,7 +43,7 @@
   3. js中，出现浮层禁止其他内容滚动可以使用touch事件：$(‘触摸的对象’).on( ‘touch’ , funciton () { return false ) ;
   4. js中调用动画效果，建议过渡时间定为200ms；
 
-![](./img/code1.jpeg)
+<!-- ![](./img/code1.jpeg) -->
 
 ###Git:
   1. git工具：souceTree、github Desktop、bash
@@ -69,4 +69,5 @@
   3. 业务逻辑，下单
   4. 下单跳转收银台。
 
-![](./img/流程图.jpeg)
+<img src='./img/流程图.jpeg' width='800' height='400'>
+<!-- ![](./img/流程图.jpeg) -->
