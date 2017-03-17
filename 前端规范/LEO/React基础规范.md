@@ -251,4 +251,4 @@ devDependencies依赖:
 	export default connect(mapStateToProps, mapDispatchToProps)(NavBar)
 
 
-###总结：这篇文章主要以整个项目构建的角度入手，通过配置文件的基础配置和基于开发环境目录的各项文件入手，较为基础具体的分析了单纯的react和利用Redux管理数据流的开发差别和好处，如果有问题，欢迎讨论指正。
+### 总结：这篇文章主要以整个项目构建的角度入手，通过配置文件的基础配置和基于开发环境目录的各项文件入手，较为基础具体的分析了单纯的react和利用Redux管理数据流的开发差别和好处，如果有问题，欢迎讨论指正。
