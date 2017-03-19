@@ -2,7 +2,6 @@
 
 ## 项目列表
 
-
 #### WebApp（重构后）
 
 |项目名|备注|
@@ -15,31 +14,36 @@
 |暂无|公共样式库|
 
 #### Boss
+
 |项目名|备注|
 |---|---|
 |[oto_saas_manage_platform ](https://github.com/kpboluome/oto_saas_manage_platform)|管理后台开发项目|
 |[oto_saas_manage_platform_publish](https://github.com/kpboluome/oto_saas_manage_platform_publish)|管理后台发布项目|
 
 #### 活动
+
 |项目名|备注|
 |---|---|
 |[boluome_web_action ](https://github.com/kpboluome/boluome_web_action)|活动开发项目|
 
 #### 订单详情（需重构）
+
 |项目名|备注|
 |---|---|
 |[boluome_web](https://github.com/kpboluome/boluome_web)|App及WebApp的订单详情|
 
 #### 公司官网
+
 |项目名|备注|
 |---|---|
 |[boluome_official](https://github.com/kpboluome/boluome_official)|公司官网开发项目|
 
 #### OTOSaaS官网
+
 |项目名|备注|
 |---|---|
 |[oto_saas_official](https://github.com/kpboluome/oto_saas_official)|OTOSaaS|
 
-#### 项目规范（待完善）
+## 项目规范（待完善）
 
 [Web前端规范](./前端规范/_.md)
