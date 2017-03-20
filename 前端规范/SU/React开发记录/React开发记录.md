@@ -1,4 +1,4 @@
-#react+redux开发笔记
+#react+redux开发记录
 ------------------
 
 ###开发技术栈
@@ -19,27 +19,36 @@
 7. [其他相关资源推荐](http://www.jianshu.com/p/a1790e1945a8?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=qq)
 
 ###开发环境的搭建
-	$ git clone https://github.com/kpboluome/oto_saas_web_app_rebuild
-	$ cd oto_saas_web_app_rebuild
-	$ npm install
+   SourceTree添加远端仓库oto_saas_web_app_rebuild，新建一个develop分支。  
+	相关终端操作：
+	
+	/* 根据package.json文件安装依赖 */
+	$ npm i
+	
 	/* install命令之前，登陆npm账号，如果已登陆，请忽略 */
 	$ npm login
 	
 	/* 生成shenghuojiaofei相关文件夹 */
-	$ node create.js shenghuojiaofei
-	/* 本地开发，localhost:9000 */
+	$ node creator.js shenghuojiaofei
+	
+	/* 本地开发，默认端口：localhost:9000 */
 	$ npm run shenghuojiaofei
+	/* 本地开发，自定义端口：localhost:20000 */
+	$ npm run shenghuojiaofei 20000
+	
 	/* 生成静态资源，用于生产 */
 	$ npm run shenghuojiaofei_build
     
 ###目录结构
 
     |-- assets                                 // 存放html
-    |-- config                                 // 个人项目webpack配置（node create.js shenghuojiaofei自动生成）
+    |-- config                                 // webpack配置
+    |   |-- _                                  // 抽离出来的webpack配置文件
+    |   |-- shenghuojiaofei                    //个人项目webpack配置（node create.js shenghuojiaofei自动生成）
     |-- dist                                   // build后静态资源
     |-- src                                    // 项目开发目录
     |   |-- services                           // 重构的所有项目
-    |   |   |-- shenghuojiaofe                 // 单个项目
+    |   |   |-- shenghuojiaofe                 // 单个项目(node create.js shenghuojiaofei自动生成）
     |   |   |   |-- actions                    // 存放redux中的action模块
     |   |   |   |   |-- index.js      	       // 例：首页action
     |   |   |   |-- components                 // 显示组件
@@ -52,11 +61,8 @@
     |   |   |   |-- styles                     // 存放当前项目所用到的样式
     |   |   |   |   |-- index.scss             // 例：首页样式
     |   |   |   |-- index.js                   // 当前项目入口配置文件
-    |   |   |   |-- router.js                  // 当前项目页面路由配置文件
-    |   |   |-- img                            // 所有项目用到的图片文件
-    |   |   |-- sass                           // 引入根目录文件夹中的sass文件夹中定义的scss文件
+    |   |   |   |-- img                        // 所有项目用到的图片文件scss文件
     |   |   |   |-- index.scss                     
-    |   |   |-- utils                          // 自己封装的的公共方法
     |-- .babelrc                               // babel文件配置
     |-- .gitignore                             // push忽略文件
     |-- package.json                           // 依赖及配置记录文件
