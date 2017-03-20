@@ -78,6 +78,7 @@
      redux的出现，是为了解决react中组件过多时，组件状态之间会互相影响，导致数据不好控制，并且后期添加新需求时的复杂性也很大。  
      redux基于单向数据流的设计思想：所有的数据都被放倒一个store（状态树）中进行管理，只能通过action来发送改变store中的某个state的信号，最后通过自定义的纯函数reducer，来将新的state浅合并到store树中，store树感受到某个分枝上的的数据较之前的数据有更新后，就会更新这个state所在的组件，并将组件重新渲染到浏览器中。
 >一个比较有意思的比喻：  
+<<<<<<< HEAD
      把 js 比喻成巴士，把 store, container, reducer 比喻为三个车站，再把 state 和 action 比喻成两种乘客。这是一趟环路巴士：  
      1. js巴士 从 store车站 出发，载上 state乘客 ，state乘客 到达某个 container车站 下车并把自己展示出来  
      2. 过了一会，有一个 action乘客 上车了，js巴士 把 action乘客 送到 reducer车站，在这里 action乘客 和 state乘客 生了一个孩子 new state，js巴士把 new state 送回了 store车站（好像是人生轮回→_→）
@@ -112,3 +113,6 @@
      <br />
      *__4，Tabs组件__*  
      低版本的Tabs方法中，可能没有可视区最多显示5个标签，点击两侧的标签后，滑动tabs的功能，把antd-mobile的版本升级到最新即可（注意，版本升级以后，可能以前的部分样式会改变，及时自行检查一遍自己的页面样式有没有变化）
+=======
+     把 js 比喻成巴士，把 store, container, reducer 比喻为三个车站，再把 state 
+>>>>>>> e063091d883356160ff0299d3bd92b3d84c8b459
