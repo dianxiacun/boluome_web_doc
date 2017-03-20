@@ -1,7 +1,7 @@
-#react+redux开发记录
+# react+redux开发记录
 ------------------
 
-###开发技术栈
+### 开发技术栈
 	react
 	redux
 	webpack
@@ -9,7 +9,7 @@
 	es6
 	sass
 
-###学习资源推荐
+### 学习资源推荐
 1. [Hello World --React](https://facebook.github.io/react/docs/hello-world.html)
 2. [es6/es2015 核心内容](http://www.jianshu.com/p/ebfeb687eb70?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=qq)
 3. [前端之 Sass/Scss 实战笔记](http://url.cn/45mI7ZJ)
@@ -18,7 +18,7 @@
 6. [Webpack的全面介绍，模块Bundler](http://www.theodo.fr/blog/2016/07/a-comprehensive-introduction-to-webpack-the-module-bundler/?utm_source=webpack_official_documentation)
 7. [其他相关资源推荐](http://www.jianshu.com/p/a1790e1945a8?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=qq)
 
-###开发环境的搭建
+### 开发环境的搭建
    SourceTree添加远端仓库oto_saas_web_app_rebuild，新建一个develop分支。  
 	相关终端操作：
 	
@@ -39,7 +39,7 @@
 	/* 生成静态资源，用于生产 */
 	$ npm run shenghuojiaofei_build
     
-###目录结构
+### 目录结构
 
     |-- assets                                 // 存放html
     |-- config                                 // webpack配置
@@ -70,10 +70,10 @@
     |-- path.config.js                         // webpack的配置文件
 
 
-###react必备技能参考
+### react必备技能参考
 	了解基础的jsx语法，和样式写法，以及react的函数和es6类声明这两种组件的定义方法。
 	
-###redux自我小结（个人小结，仅供参考）
+### redux自我小结（个人小结，仅供参考）
 	参照redux官方文档，结合里面的demo去熟悉redux管理数据的思想。
      redux的出现，是为了解决react中组件过多时，组件状态之间会互相影响，导致数据不好控制，并且后期添加新需求时的复杂性也很大。  
      redux基于单向数据流的设计思想：所有的数据都被放倒一个store（状态树）中进行管理，只能通过action来发送改变store中的某个state的信号，最后通过自定义的纯函数reducer，来将新的state浅合并到store树中，store树感受到某个分枝上的的数据较之前的数据有更新后，就会更新这个state所在的组件，并将组件重新渲染到浏览器中。
@@ -82,7 +82,7 @@
      1. js巴士 从 store车站 出发，载上 state乘客 ，state乘客 到达某个 container车站 下车并把自己展示出来  
      2. 过了一会，有一个 action乘客 上车了，js巴士 把 action乘客 送到 reducer车站，在这里 action乘客 和 state乘客 生了一个孩子 new state，js巴士把 new state 送回了 store车站（好像是人生轮回→_→）
 
-###redux工作的四大模块
+### redux工作的四大模块
 <img src="./redux流程图.png" title="redux流程图" alt="redux流程图" />
      <br />
 *__container模块的职责：__*   
@@ -100,7 +100,7 @@
 *__store模块的职责：__*  
      所有组件的数据来源，组件更新的控制源，当store的某个state分枝发生改变以后，就会向对应的container发送指令，然后container就会更新他从store中拿的数据，然后使用这些数据的子组件也会更新这些数据。（组件中只有state改变，才会引起组件的刷新，同时组件刷新以后，子组件也会跟着刷新，组件的刷新的同时props属性也会重新获取。）  
 
-###antd组件库使用过程中的“坑”
+### antd组件库使用过程中的“坑”
      *__1. 部分样式布局突然失效__*  
      有可能是antd库的版本升级了，回退的上一版本测试一下。  
      <br />
