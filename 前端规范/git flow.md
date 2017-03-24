@@ -5,12 +5,12 @@
 >&emsp; git flow建议使用工具SourceTree，因为SorceTree天然支持git flow，工具栏上就有对应的图标，如果没有，那么根据下图提示操作即可，在圆圈位置处右击，然后选择git flow图标拖到工具栏处即可
 <br />
 
-<center><img src="./img/gitflow_sourcetree.png" title="sorceTree中Git工作流的添加" width="800px" /></center>
+<center><img src="./GitFlow_IMG/gitflow_sourcetree.png" title="sorceTree中Git工作流的添加" width="800px" /></center>
 
 ### git flow的初始化
 &emsp; 第一次使用git flow会有一个初始化设置，选择默认的即可。
 
-<center><img src="./img/gitFlowInitial.png" title="gitFlowInitial" width="800px" /></center>
+<center><img src="./GitFlow_IMG/gitFlowInitial.png" title="gitFlowInitial" width="800px" /></center>
 
 
 ### git flow中的分支定义
@@ -26,7 +26,7 @@
 &emsp; github创建一个仓库后，会自动生成一个master分支，拉取到本地以后，会在SourceTree中，左侧工具栏中的远端选项中显示，双击下面的master分支，将其检出到分支选项中，作为本地分支。项目开发中，该分支中代码不能直接被改变，都是通过release或hotfix分支合并的方式，改变master分支中的代码内容。
 ##### &emsp; develop（中文：开发）
 &emsp; develop分支，一般都是通过初始化git flow后，自动在本地生成的，然后再推送到远程仓库中，是远程仓库中也出现一个develop分支。项目开发过程中，该分支中代码不能直接被改变，一般都是通过feature，release或hotfix分支合并的方式，改变develop分支中的代码结构的。其中，最主要的是通过feature分支合并得到，其他两个短期分支是直接操作当前版本的项目，所以为了保持版本的同步，这两个短期分支会同时合并到master和develop分支上。
-    <center><img src="./img/createDevelop.png" title="gitFlowInitial" width="800px" /></center>
+    <center><img src="./GitFlow_IMG/createDevelop.png" title="gitFlowInitial" width="800px" /></center>
 
 <br />
 
@@ -40,7 +40,7 @@
 
 ### 短期分支的创建
 &emsp; 以hotfix分支的创建为例说明短期分支的创建流程。
-<center><img src="./img/hotfix_use.gif" width="800"></center>
+<center><img src="./GitFlow_IMG/hotfix_use.gif" width="800"></center>
 
 ### feature, release, hotfix的派生，合并
 
