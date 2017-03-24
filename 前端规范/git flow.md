@@ -9,7 +9,6 @@
 
 ### git flow的初始化
 &emsp; 第一次使用git flow会有一个初始化设置，选择默认的即可。
-
 <center><img src="./GitFlow_IMG/gitFlowInitial.png" title="gitFlowInitial" width="800px" /></center>
 
 
