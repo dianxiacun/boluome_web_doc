@@ -145,7 +145,7 @@
 
   ```js
     const mapDispatchToProps = dispatch => ({
-      dispatch
+      [ dispatch, ] //如果用到 wrap 方法的话需要添加
       handleChange: () => { ... },
       handleClick : () => { ... }
     })
