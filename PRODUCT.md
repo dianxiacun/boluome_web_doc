@@ -7,7 +7,6 @@
 |[oto_saas_web_app_rebuild](https://github.com/kpboluome/oto_saas_web_app_rebuild)|服务开发项目|
 |[oto_saas_web_app_rebuild_publish](https://github.com/kpboluome/oto_saas_web_app_rebuild_publish)|服务发布项目|
 |[oto_saas_web_app_component](https://github.com/kpboluome/oto_saas_web_app_component) |公共（业务）组件库|
-|[oto_saas_web_app_customize_lib](https://github.com/kpboluome/oto_saas_web_app_customize_lib.git)|公共业务逻辑代码（客户相关、SDK相关、名字待定）|
 |[common-lib](https://github.com/kpboluome/common-lib)|公共方法
 |暂无|公共样式库|
 
