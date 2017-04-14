@@ -1,11 +1,25 @@
 # 产品列表
 
+## 目录
+
+- [公共库](#公共库)
+- [服务对接](#服务对接)
+- [订单详情](#订单详情)
+- 管理后台
+  - [Boss](#boss)
+- [运营活动](#运营活动)
+- 官网
+  - [菠萝觅官网](#菠萝觅官网)
+  - [OTOSaaS官网](#otosaas官网)
+  
+---  
+
 #### 公共库
 |项目名|备注|
 |---|---|
 |[common-lib](https://github.com/kpboluome/common-lib)|公共方法库(es6)|
 
-#### WebApp（重构后）
+#### 服务对接
 
 |项目名|备注|
 |---|---|
@@ -21,19 +35,19 @@
 |[oto_saas_manage_platform ](https://github.com/kpboluome/oto_saas_manage_platform)|管理后台开发项目|
 |[oto_saas_manage_platform_publish](https://github.com/kpboluome/oto_saas_manage_platform_publish)|管理后台发布项目|
 
-#### 活动
+#### 运营活动
 
 |项目名|备注|
 |---|---|
 |[boluome_web_action ](https://github.com/kpboluome/boluome_web_action)|活动开发项目|
 
-#### 订单详情（需重构）
+#### 订单详情
 
 |项目名|备注|
 |---|---|
-|[boluome_web](https://github.com/kpboluome/boluome_web)|App及WebApp的订单详情|
+|[boluome_web](https://github.com/kpboluome/boluome_web)|App及WebApp的订单详情（需重构）|
 
-#### 公司官网
+#### 菠萝觅官网
 
 |项目名|备注|
 |---|---|
