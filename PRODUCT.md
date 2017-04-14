@@ -5,7 +5,6 @@
 - [公共库](#公共库)
 - [服务对接](#服务对接)
 - [订单详情](#订单详情)
-- [运营活动](#运营活动)
 - 管理后台
   - [Boss](#boss)
   - [商户](#商户)
@@ -13,6 +12,8 @@
 - 官方网站
   - [菠萝觅官网](#菠萝觅官网)
   - [OTOSaaS官网](#otosaas官网)
+- [运营活动](#运营活动)
+- [分享模板](#分享模板)
 
 ---  
 
@@ -60,3 +61,9 @@
 |项目名|备注|
 |---|---|
 |[oto_saas_official](https://github.com/kpboluome/oto_saas_official)|OTOSaaS官网开发项目|
+
+#### 其他
+
+|项目名|备注|
+|---|---|
+|[share_template](https://github.com/kpboluome/share_template.git)|分享模板|
