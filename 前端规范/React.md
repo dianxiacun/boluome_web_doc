@@ -5,9 +5,9 @@
     - [文件结构](#文件结构)
     - [路由结构](#路由结构)
   - 书写规范
-    - [Component](#Component)
-    - [Container](#Container)
-    - [Reducer](#Reducer)
+    - [Component](#component)
+    - [Container](#container)
+    - [Reducer](#reducer)
     - [公共组件](#公共组件)
 
 ---
