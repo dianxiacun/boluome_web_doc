@@ -1,109 +1,46 @@
-<!-- # React 项目内规范 -->
+# React 项目内规范
 
 
-### 命名规范
+### 结构
 
-* 文件夹名，小写，多个单词以 “-” 分割（服务不分割），如：order-list、jiadianqingxi、cashier
+* 正常情况下，页面(片段)、container、component、reducer、action都是一一对应的，comopnent 则可以包含多个 components。
 
-* 文件名，小写，多个单词以 “-” 分割，如：index.scss、app.js
+  当然，复杂则可以拆成多组(个)并由一个 component(container) 组合起来输出
 
-* 类名，大驼峰命名，
-
-  ```js
-    class App extends Component { ... }
-    //函数式
-    const App = () => (<div></div>)
+  ```bash
+    action
+      page1.js          -> page1 的 action creators
+      ...
+    components
+      page1.js          -> 通过 container 传递的 Props 显示页面(片段)并绑定事件
+      page1.child1.js   -> page1 的一部分，当然如果简短可以直接写在 page1 里
+      page1.child2.js   
+      ...
+    containers
+      page1.js          -> 将状态及事件传递给 page1，并可以在此为 page1 绑上生命周期
+      ...
+    reducers
+      page1.js          -> 根据 action 传入的 type 以及需要更新的 state 来更新 Store
+      ...
   ```
 
-* 方法名，小驼峰命名，如：
+* 路由的首个Route为一个容器组件
 
   ```js
-    const createOrder = () => {}
-    const mergeState = () => {}
+    // root component
+    const Root = ({ children }) => (<div>{ children }</div>)
+    // routes
+    ...
+    <Router history={ browserHistory } >
+      <Route path='/[service]' component={ Root } >
+        <IndexRoute component={ FirstPage } />
+        ...
+      </Route>
+    </Router>
+    ...
   ```
 
-* 参数 / 变量，小驼峰命名
-
-  ```js
-    let customerCode
-    let customerUserId
-  ```
-
-* 常量，大写，多个单词以 “\_” 分割
-
-  ```js
-    const REQUEST_URL   = 'http://...'
-    const TIME_INTERVAL = 1000
-  ```
-
-
-### 注释
-
-* 专有名词或冷门单词请注释
-
-  ```js
-    //我是不是有一只香蕉
-    let woshibushiyouyizhixiangjiao = false
-  ```
-* 方法请注释，复杂或多参的情况请使用多行注释标明参数（可以了解一下 [类型签名](https://github.com/llh911001/mostly-adequate-guide-chinese/blob/master/ch7.md)）
-
-
-### 方法 & 留白 & 判断
-
-* 方法通过匿名函数来赋值创建
-
-  ```js
-    //function
-    const create = function() {}
-    //arrow function
-    const create = () => {}
-
-    create()
-  ```
-
-* 如果可以就不要加分号啦，注意换行就行
-
-* 缩进大小 = 4个空格（编辑器可以设置）
-
-* “,”，“:” 之后跟空格
-
-  ```js
-    const a = {
-      b: 1,
-      c: [ 1, 2, 3 ]
-    }
-  ```
-
-* “{}”，“[]” 开始和结束都加空格
-
-  ```js
-    const arr = [ 1, 2, 3 ]
-    const obj = { p: 1, p: 2 }
-  ```
-
-* 三目运算按操作符换行并注意缩进（当较长的时候）
-
-  ```js
-    //三目
-    typeof o === 'undefined'
-      ? false
-      : typeof o === 'array'
-        ? false
-        : typeof o === 'object'
-          ? true
-          : false
-  ```
-
-* 运算符前后加空格（++，\-\- 除外）
-
-  ```js
-    let a = 1
-    let b = a + 2
-  ```
-
-* 正常情况下请使用 “===”，“!==” 来比较是否相等
-
-### components
+### Components
 
 * pure render，即：对于相同的props，总能给出相同的JSX输出（只做判断，不做修改）
 
@@ -112,10 +49,28 @@
   ```js
     const App = () => (<div></div>)
   ```
-* 不要在函数式组件里写复杂的逻辑代码，
-  而将其封装成方法写在container里当props传入component
 
-* JSX用 “()” 包裹，如：(\<p>\</p>)
+* 不要申明 JSX 的变量
+
+  ```js
+    // 不要这样做
+    ...
+      const XXX = (<div>xxx</div>)
+      return (
+        <div>{ XXX }</div>
+      )
+    ...
+    // 推荐将其拆成组件
+    ...
+      const App = () => (<div><XXX /><div>)
+
+      const XXX = () => (<div>xxx</div>)
+    ...
+  ```
+
+* 不要在函数式组件里写复杂的逻辑代码，而将其封装成方法写在container里
+
+* JSX用 “()” 包裹
 
 * 尽量不要在JSX内使用对象来进行赋值，而在 return 前将对象的参数提取出来（描述不清楚）
 
@@ -132,7 +87,7 @@
 
 * 默认值尽量在reducer里定义好
 
-### containers
+### Containers
 
 * mapStateToProps参数内将需要用到的state从Store里提取出来
 
@@ -149,6 +104,16 @@
       handleChange: () => { ... },
       handleClick : () => { ... }
     })
+  ```
+
+### Reducers
+
+* 尽量添加initialState
+
+  ```js
+      //即使它为空
+      const initialState = {}
+      const reducer1 = (state = initialState, action) => { ... }
   ```
 
 ### 公共组件
