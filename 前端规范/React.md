@@ -3,7 +3,7 @@
 
 ### 结构
 
-* 正常情况下，页面(片段)、container、component、reducer、action都是一一对应的，comopnent 则可以包含多个 components。
+* 正常情况下，页面(片段)、container、component、reducer、action都是一一对应的，comopnent 则可以包含多个 components。
 
   当然，复杂则可以拆成多组(个)并由一个 component(container) 组合起来输出
 
