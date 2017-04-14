@@ -1,7 +1,18 @@
 # React 项目内规范
 
+### 目录
+  - 结构
+    - [文件结构](#文件结构)
+    - [路由结构](#路由结构)
+  - 书写规范
+    - [Component](#Component)
+    - [Container](#Container)
+    - [Reducer](#Reducer)
+    - [公共组件](#公共组件)
 
-### 结构
+---
+
+### 文件结构
 
 * 正常情况下，页面(片段)、container、component、reducer、action都是一一对应的，comopnent 则可以包含多个 components。
 
@@ -24,6 +35,7 @@
       ...
   ```
 
+### 路由结构
 * 路由的首个Route为一个容器组件
 
   ```js
@@ -40,7 +52,7 @@
     ...
   ```
 
-### Components
+### Component
 
 * pure render，即：对于相同的props，总能给出相同的JSX输出（只做判断，不做修改）
 
@@ -87,7 +99,7 @@
 
 * 默认值尽量在reducer里定义好
 
-### Containers
+### Container
 
 * mapStateToProps参数内将需要用到的state从Store里提取出来
 
@@ -106,7 +118,7 @@
     })
   ```
 
-### Reducers
+### Reducer
 
 * 尽量添加initialState
 

@@ -1,5 +1,21 @@
 # Javascript 规范
 
+### 目录
+  - 语法
+    - [建议](#建议)
+    - [命名](#命名)
+    - [注释](#注释)
+    - [留白](#留白)
+  - 方法
+    - [函数](#函数)
+    - [逻辑运算](#逻辑运算)
+
+---
+
+### 建议
+
+* 如果可以就不要加分号啦，注意换行就行
+
 ### 命名
 
 * 文件夹名，小写，多个单词以 “-” 分割（服务不分割），如：order-list、jiadianqingxi、cashier
@@ -46,21 +62,7 @@
   ```
 * 方法请注释，复杂或多参的情况请使用多行注释标明参数（可以了解一下 [类型签名](https://github.com/llh911001/mostly-adequate-guide-chinese/blob/master/ch7.md)）
 
-
-### 方法 & 留白 & 判断
-
-* 方法通过匿名函数来赋值创建
-
-  ```js
-    //function
-    const create = function() {}
-    //arrow function
-    const create = () => {}
-
-    create()
-  ```
-
-* 如果可以就不要加分号啦，注意换行就行
+### 留白
 
 * 缩进大小 = 4个空格（编辑器可以设置）
 
@@ -79,7 +81,6 @@
     const arr = [ 1, 2, 3 ]
     const obj = { p: 1, p: 2 }
   ```
-
 * 三目运算按操作符换行并注意缩进（当较长的时候）
 
   ```js
@@ -99,5 +100,20 @@
     let a = 1
     let b = a + 2
   ```
+
+### 函数
+
+* 函数通过赋值变量来创建
+
+  ```js
+    //function
+    const create = function() {}
+    //arrow function
+    const create = () => {}
+
+    create()
+  ```
+
+### 逻辑运算
 
 * 正常情况下请使用 “===”，“!==” 来比较是否相等
