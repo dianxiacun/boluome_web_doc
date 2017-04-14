@@ -1,5 +1,10 @@
 # 产品列表
 
+#### 公共库
+|项目名|备注|
+|---|---|
+|[common-lib](https://github.com/kpboluome/common-lib)|公共方法库(es6)|
+
 #### WebApp（重构后）
 
 |项目名|备注|
@@ -7,7 +12,6 @@
 |[oto_saas_web_app_rebuild](https://github.com/kpboluome/oto_saas_web_app_rebuild)|服务开发项目|
 |[oto_saas_web_app_rebuild_publish](https://github.com/kpboluome/oto_saas_web_app_rebuild_publish)|服务发布项目|
 |[oto_saas_web_app_component](https://github.com/kpboluome/oto_saas_web_app_component) |公共（业务）组件库|
-|[common-lib](https://github.com/kpboluome/common-lib)|公共方法
 |暂无|公共样式库|
 
 #### Boss
