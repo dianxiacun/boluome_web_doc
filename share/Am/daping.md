@@ -3,7 +3,7 @@
 >#### 1.客户机型(版本)
 >#### 2.客户机器的内核及兼容性（浏览器）
 >#### 3.客户机型需要适配的尺寸 （如: 1920-1080  1280-720），这里是适配各尺寸的一个案例 : 
-[DEMO]:(https://github.com/kpboluome/boluome_web_doc/blob/master/share/Am/shipeiDEMO/File/tvDEMO/css.js)
+- [DEMO](https://github.com/kpboluome/boluome_web_doc/blob/master/share/Am/shipeiDEMO/File/tvDEMO/css.js)
 >#### 4.客户机器对性能的适应度
 >#### 5.客户与我们对接特别是技术文档，记得抄送一份发给技术人员，以便于文档更新，同时减少不必要的步骤
 ---------
