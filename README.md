@@ -11,7 +11,5 @@
   - [React项目构建](./share/LEO/React基础规范.md)
   - [软件版本号规范](./share/SU/软件版本号规范.md)
 - 客户产品对接须知
-  - [JavaScript](./standard/Javascript.md)
-  - [React](./standard/React.md)
-  - [大屏项目对接](./share/Am/daping.md)
-  - [农行项目对接](./share/Am/abchina.md)
+  - [大屏项目对接](./share/Am/daping.md)
+  - [农行项目对接](./share/Am/abchina.md)
