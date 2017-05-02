@@ -51,6 +51,12 @@
     </Router>
     ...
   ```
+* path 命名小写多个单词以 “-” 分割，尽可能用名词
+  ```js
+    ...
+    <Route path='food-list' component={ FoodList } />
+    ...
+  ```
 
 ### Component
 
