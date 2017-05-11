@@ -13,9 +13,10 @@
   - [菠萝觅官网](#菠萝觅官网)
   - [OTOSaaS官网](#otosaas官网)
 - [运营活动](#运营活动)
-- [分享模板](#分享模板)
+- [分享模板](#其他)
+- [Webhooks](#其他)
 
----  
+---  
 
 #### 公共库
 |项目名|备注|
@@ -67,3 +68,4 @@
 |项目名|备注|
 |---|---|
 |[share_template](https://github.com/kpboluome/share_template.git)|分享模板|
+|[webhooks](https://github.com/kpboluome/oto_saas_webhooks)|用作发布|
