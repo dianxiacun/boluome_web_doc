@@ -4,7 +4,7 @@
 - [前端规范](./standard/_.md)
   - [JavaScript](./standard/Javascript.md)
   - [React](./standard/React.md)
-- [产品列表](./Product.md)
+- [产品列表](./PRODUCT.md)
 - [客户服务](./Customer.md)
 - 技术分享
   - [Git Flow](./share/SU/git_flow.md)
